@@ -31,15 +31,21 @@ export default function Home() {
           </production>
 
           <work className={work.beside}>
-            <work className={work.group}>
-              <h3 className={work.juice}>「ラムネ瓶」</h3>
-              <img className="imag-responsive center-block" src={"/image/juice.png"} width={"50%"}/>
-            <work className={work.group}></work>
-            <work className={work.group}>
-              <h4 className={work.soba}>「ざるそば」</h4>
-              <img className="imag-responsive center-block" src={"/image/soba.png"} width={"50%"}/>
+            <work className={work.wrapper}>
+              <work className={work.group}>
+                <h3 className={work.juice}>「ラムネ瓶」</h3>
+                <img className="imag-responsive center-block" src={"/image/juice.png"} width={"50%"}/>
+              </work>
+            </work>
+            
+            <work className={work.wrapper}>
+              <work className={work.group}>
+                <h4 className={work.soba}>「ざるそば」</h4>
+                <img className="imag-responsive center-block" src={"/image/soba.png"} width={"50%"}/>
+              </work>
             </work>
           </work>
+
 
           <h5 className={qualification.qualification}>資格・免許</h5>
           <p className={qualification.name}>・自動車運転免許（仮）</p>

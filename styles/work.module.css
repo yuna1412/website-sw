@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
 }
+
+.wrapper{
+  width: 100vw;
+}
 .group{
+  width: 30%;
   flex-basis: auto;
 }
 .juice {
