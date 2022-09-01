@@ -1,118 +1,129 @@
-h1:first-letter {
-  font-size: 150%;
-  color: #eb6100;
+.container {
+  padding: 0 2rem;
 }
 
-h2 {
-  position: relative;
-  margin-bottom: 2em;
-  padding: 1.5rem 2rem;
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
   border-radius: 10px;
-  background: #eee;}
-
-h2:before,
-h2:after {
-  position: absolute;
-  content: '';
-  border-radius: 50%;
-  background: #eee; }
-
-h2:before {
-  bottom: -15px;
-  left: 30px;
-  width: 30px;
-  height: 30px;}
-
-h2:after {
-  bottom: -30px;
-  left: 50px;
-  width: 15px;
-  height: 15px;}
-h3 {
-  position: relative;
-   margin-bottom: 2em;
-   padding: 1.5rem 2rem;
-   border-radius: 10px;
-   background: #eee;}
- 
- h3:before,
- h3:after {
-   position: absolute;
-   content: '';
-   border-radius: 50%;
-   background: #eee;}
- 
- h3:before {
-   right: 30px;
-   bottom: -15px;
-   width: 30px;
-   height: 30px;}
- 
- h3:after {
-   right: 50px;
-   bottom: -30px;
-   width: 15px;
-   height: 15px;}
-h4 {
-      position: relative;
-      display: inline-block;
-      height: 64px;
-      margin-left: 30px;
-      padding: 1rem 2rem 1rem 3rem;
-      color: #fff;
-      background: #fa4141;}
-    
- h4:before {
-      position: absolute;
-      top: 0;
-      left: -30px;
-      content: '';
-      border-width: 32px 30px 32px 0;
-      border-style: solid;
-      border-color: transparent #fa4141 transparent transparent;}
-    
- h4:after {
-      position: absolute;
-      top: calc(50% - 7px);
-      left: -10px;
-      width: 14px;
-      height: 14px;
-      content: '';
-      border-radius: 50%;
-      background: #fff;}
-
-h5 {
-          position: relative;
-          padding: 1em 2em;
-          text-align: center;}
-        
- h5:before,
- h5:after {
-      position: absolute;
-      content: '';}
-        
- h5:after {
-      top: 0;
-      left: 0;
-      width: 50px;
-      height: 50px;
-      border-top: 2px solid #000;
-      border-left: 2px solid #000;}
-        
- h5:before {
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 50px;
-      border-right: 2px solid #000;
-      border-bottom: 2px solid #000;}
-
-.class{
-  font-size: 250%;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
 }
-.class2{
-  font-size: 200%;
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
 }
-.parent{
-  text-align:center;
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
 }

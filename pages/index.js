@@ -14,11 +14,11 @@ export default function Home() {
         </div>
         
           <div className="container">
-          <div className="row">
+          <div className="flex">
             <div className="col-2 debug"> 
-              <img className="imag-responsive center-block" src={"/image/face.png"} width={"100%"}/>
+              <img className="imag-responsive center-block" src={"/image/face.png"} width={"30%"}/>
             </div>
-            <div className="col-8 debug">
+            <div className="col-5 debug">
               <p className="className">民谷友菜/19歳/女</p>
             </div>
           </div>
@@ -35,12 +35,12 @@ export default function Home() {
         </div>
 
         <div className="container">
-          <div className="row">
+          <div className="flex">
             <div className="col-5 debug">
               <h2>「ラムネ瓶」</h2>
-              <img className="imag-responsive center-block" src={"/image/ramunebin.png"} width={"100%"}/>
+              <img className="imag-responsive center-block" src={"/image/ramunebin.png"} width={"30%"}/>
             </div>
-            <div className="col-2 debug"></div>
+            <div className="col-2 debug"> </div>
             <div className="col-5 debug">
               <p className>  </p>
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="col-2 debug"></div>
             <div className="col-5 debug">
               <h3>「ざるそば」</h3>
-              <img className="imag-responsive center-block" src={"/image/zarusoba.png"} width={"100%"}/>
+              <img className="imag-responsive center-block" src={"/image/zarusoba.png"} width={"30%"}/>
               <p className>  </p>
             </div>
           </div>
