@@ -1,3 +1,12 @@
 .myName{
     font-size: 250%;
+    text-align: center;
+    background-color: aqua
   }
+  .beside{
+    display: flex;
+    background-color: #fa4141;
+  }
+  .group{
+    display: flex;
+}

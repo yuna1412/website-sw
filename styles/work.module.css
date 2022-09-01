@@ -1,3 +1,10 @@
+.beside{
+  display: flex;
+  justify-content: center;
+}
+.group{
+  flex-basis: auto;
+}
 .juice {
     position: relative;
     margin-bottom: 2em;

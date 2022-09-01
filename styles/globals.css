@@ -25,16 +25,3 @@ a {
   }
 }
 
-
-
-
-.flex{
-  display: flex;
-  background-color: #fa4141;
-}
-.col-2 debug{
-  flex: 1
-}
-.col-5 debug{
-  flex: 2
-}

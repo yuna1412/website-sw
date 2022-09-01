@@ -1,3 +1,10 @@
+.wrapper{
+    margin: 3%;
+}
+.parent{
+    display: flex;
+    text-align:center;
+  }
 .title {
     position: relative;
     padding: 1em 2em;
@@ -23,7 +30,3 @@ width: 50px;
 height: 50px;
 border-right: 2px solid #000;
 border-bottom: 2px solid #000;}
-
-.parent{
-    text-align:center;
-  }
