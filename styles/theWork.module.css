@@ -1,0 +1,50 @@
+.juice {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    background: #eee;}
+  
+  .juice:before,
+  .juice:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background: #eee; }
+  
+  .juice:before {
+    bottom: -15px;
+    left: 30px;
+    width: 30px;
+    height: 30px;}
+  
+  .juice:after {
+    bottom: -30px;
+    left: 50px;
+    width: 15px;
+    height: 15px;}
+  .soba {
+    position: relative;
+     margin-bottom: 2em;
+     padding: 1.5rem 2rem;
+     border-radius: 10px;
+     background: #eee;}
+   
+  .soba:before,
+  .soba:after {
+     position: absolute;
+     content: '';
+     border-radius: 50%;
+     background: #eee;}
+   
+  .soba:before {
+     right: 30px;
+     bottom: -15px;
+     width: 30px;
+     height: 30px;}
+   
+  .soba:after {
+     right: 50px;
+     bottom: -30px;
+     width: 15px;
+     height: 15px;}
