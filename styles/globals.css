@@ -24,4 +24,15 @@ a {
     background: black;
   }
 }
-
+table{
+  margin: 0 5%;
+}
+table tr{
+ margin: 0 3%;
+}
+.main{
+  width: 40%;
+}
+.cen{
+  width: 20%;
+}

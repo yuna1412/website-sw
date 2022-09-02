@@ -32,21 +32,23 @@ export default function Home() {
               </div>
           </div>
 
-          <div className={work.all}>
-            <div className={work.wrapper}>
-              <div className={work.group_J}>
+          <table>
+            <tr>
+              <td className="main">
                 <p className={work.juice}>「ラムネ瓶」</p>
                 <img className={work.img_J} src={"/image/juice.png"}/>
-              </div>
-            </div>
+              </td>
+              <td className="cen"></td><td className="main"></td>
+            </tr>
             
-            <div className={work.wrapper}>
-              <div className={work.group_S}>
+            <tr>
+              <td className="main"></td><td className="cen"></td>
+              <td className="main">
                 <p className={work.soba}>「ざるそば」</p>
                 <img className={work.img_S} src={"/image/soba.png"}/>
-              </div>
-            </div>
-          </div>
+              </td>
+            </tr>
+          </table>
 
 
           <div className={qualification.all}>  
