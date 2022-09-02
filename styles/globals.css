@@ -23,8 +23,10 @@ a {
     color: white;
     background: black;
   }
-
-  tr{
+  table{
+    margin: 0 5%;
+  }
+  tbody{
    margin: 0 3%;
   }
   .main{
