@@ -19,36 +19,41 @@ export default function Home() {
         <link 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         </Head>
-
+        <div className>
           <h1 className={top.title}>履歴書</h1>
-          <name className={name.beside}>
-              <img className="imag-responsive center-block" src={"/image/face.png"} width={"30%"}/>
+          <div className={name.beside}>
+              <img className={name.img_F} src={"/image/face.png"}/>
               <p className={name.myName}>民谷友菜/19歳/女</p>
-          </name>
+          </div>
 
-          <production className={production.parent}>
-              <div className={production.wrapper}><h2 className={production.title}>fusion360学生デザインコンテスト応募作品集</h2></div>
-          </production>
+          <div className={production.parent}>
+              <div className={production.wrapper}>
+                <h2 className={production.title}>fusion360学生デザインコンテスト応募作品集</h2>
+              </div>
+          </div>
 
-          <work className={work.beside}>
-            <work className={work.wrapper}>
-              <work className={work.group}>
-                <h3 className={work.juice}>「ラムネ瓶」</h3>
-                <img className="imag-responsive center-block" src={"/image/juice.png"} width={"50%"}/>
-              </work>
-            </work>
+          <div className={work.all}>
+            <div className={work.wrapper}>
+              <div className={work.group_J}>
+                <p className={work.juice}>「ラムネ瓶」</p>
+                <img className={work.img_J} src={"/image/juice.png"}/>
+              </div>
+            </div>
             
-            <work className={work.wrapper}>
-              <work className={work.group}>
-                <h4 className={work.soba}>「ざるそば」</h4>
-                <img className="imag-responsive center-block" src={"/image/soba.png"} width={"50%"}/>
-              </work>
-            </work>
-          </work>
+            <div className={work.wrapper}>
+              <div className={work.group_S}>
+                <p className={work.soba}>「ざるそば」</p>
+                <img className={work.img_S} src={"/image/soba.png"}/>
+              </div>
+            </div>
+          </div>
 
 
-          <h5 className={qualification.qualification}>資格・免許</h5>
-          <p className={qualification.name}>・自動車運転免許（仮）</p>
+          <div className={qualification.all}>  
+            <h2 className={qualification.qualification}>資格・免許</h2>
+            <p className={qualification.name}>・自動車運転免許（仮）</p>
+          </div>
+        </div>
       </>
     );  
 }

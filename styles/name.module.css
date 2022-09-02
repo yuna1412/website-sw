@@ -1,12 +1,14 @@
+.beside{
+    margin: 0 5%;
+    display: flex;
+  }
+.img_F{
+    width: 10%;
+    height: 10%;
+    text-align: center;
+}
 .myName{
+    margin-left: 2%;
     font-size: 250%;
     text-align: center;
-    background-color: aqua
   }
-  .beside{
-    display: flex;
-    background-color: #fa4141;
-  }
-  .group{
-    display: flex;
-}

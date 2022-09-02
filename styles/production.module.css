@@ -1,10 +1,10 @@
+.parent{
+    margin: 0 5%;
+    text-align:center;
+}
 .wrapper{
     margin: 3%;
 }
-.parent{
-    display: flex;
-    text-align:center;
-  }
 .title {
     position: relative;
     padding: 1em 2em;

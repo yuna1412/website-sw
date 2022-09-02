@@ -1,16 +1,14 @@
-.beside{
-  display: flex;
-  justify-content: center;
+.all{
+  margin: 0 5%
 }
-
 .wrapper{
-  width: 100vw;
-}
-.group{
-  width: 30%;
-  flex-basis: auto;
+    margin: 0 3%;
+  }
+.group_J{
+  width: 40%;
 }
 .juice {
+    font-size: 150%;
     position: relative;
     margin-bottom: 2em;
     padding: 1.5rem 2rem;
@@ -35,7 +33,17 @@
     left: 50px;
     width: 15px;
     height: 15px;}
+
+  .img_J{
+    width: 100%;
+    text-align: center;
+  }
+  .group_S{
+    width: 40%;
+    margin: 0 0 0 auto;
+  }
   .soba {
+    font-size: 150%;
     position: relative;
      margin-bottom: 2em;
      padding: 1.5rem 2rem;
@@ -60,3 +68,8 @@
      bottom: -30px;
      width: 15px;
      height: 15px;}
+
+  .img_S{
+    width: 100%;
+    text-align: center;
+  }
