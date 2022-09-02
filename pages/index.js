@@ -16,11 +16,12 @@ export default function Home() {
         <Head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+        <link
+          rel="stylesheet"
+          href="https://meyerweb.com/eric/tools/css/reset/"/>
         <link 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         </Head>
-        <div className>
           <h1 className={top.title}>履歴書</h1>
           <div className={name.beside}>
               <img className={name.img_F} src={"/image/face.png"}/>
@@ -33,30 +34,27 @@ export default function Home() {
               </div>
           </div>
 
-          <table>
-            <tr>
-              <td className="main">
+          <div className={work.all}>
+            <div className={work.wrapper}>
+              <div className={work.group_J}>
                 <p className={work.juice}>「ラムネ瓶」</p>
                 <img className={work.img_J} src={"/image/juice.png"}/>
-              </td>
-              <td className="cen"></td><td className="main"></td>
-            </tr>
+              </div>
+            </div>
             
-            <tr>
-              <td className="main"></td><td className="cen"></td>
-              <td className="main">
+            <div className={work.wrapper}>
+              <div className={work.group_S}>
                 <p className={work.soba}>「ざるそば」</p>
                 <img className={work.img_S} src={"/image/soba.png"}/>
-              </td>
-            </tr>
-          </table>
+              </div>
+            </div>
+          </div>
 
 
           <div className={qualification.all}>  
             <h4 className={qualification.qualification}>資格・免許</h4>
             <p className={qualification.name}>・自動車運転免許（仮）</p>
           </div>
-        </div>
       </>
     );  
 }
