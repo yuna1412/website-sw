@@ -16,6 +16,7 @@ export default function Home() {
         <Head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
         <link 
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         </Head>
@@ -28,7 +29,7 @@ export default function Home() {
 
           <div className={production.parent}>
               <div className={production.wrapper}>
-                <h2 className={production.title}>fusion360学生デザインコンテスト応募作品集</h2>
+                <h5 className={production.title}>fusion360学生デザインコンテスト応募作品集</h5>
               </div>
           </div>
 
@@ -52,7 +53,7 @@ export default function Home() {
 
 
           <div className={qualification.all}>  
-            <h2 className={qualification.qualification}>資格・免許</h2>
+            <h4 className={qualification.qualification}>資格・免許</h4>
             <p className={qualification.name}>・自動車運転免許（仮）</p>
           </div>
         </div>
