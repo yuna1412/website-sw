@@ -2,7 +2,6 @@ import Head from 'next/head'
 import image from 'next/image'
 import React from 'react'
 import Link from 'next/link';
-import Top from '../components/Top';
 import { render } from 'react-dom'
 import styles from '../styles/Home.module.css'
 import top from '../styles/top.module.css'
@@ -11,8 +10,7 @@ import production from '../styles/production.module.css'
 import work from '../styles/work.module.css'
 import qualification from '../styles/qualification.module.css'
 
-
-export default function Home() {
+export default function Production() {
     return (
       <>
         <Head>
@@ -27,15 +25,12 @@ export default function Home() {
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"             
           crossorigin="anonymous"/>
         </Head>
-        <Top></Top>
 
-        <div>
-        <h2>fusion360学生デザインコンテスト応募作品集 一覧</h2>
-        <Link href="/Production"><a>ここから</a></Link>
-
-        <h2>資格・免許</h2>
-        <Link href="/Qualification"><a>ここから</a></Link>
+        <div className={qualification.all}>  
+            <h4 className={qualification.qualification}>資格・免許</h4>
+            <p className={qualification.name}>・自動車運転免許（仮）</p>
         </div>
+        <Link href="/"><a>トップページへ</a></Link>
       </>
-    );  
+    );
 }
