@@ -23,16 +23,15 @@ a {
     color: white;
     background: black;
   }
-  table{
-    margin: 0 5%;
-  }
-  tbody{
-   margin: 0 3%;
-  }
-  .main{
-    width: 40%;
-  }
-  .cen{
-    width: 20%;
-  }
+}
+.ta_wrapper{
+  margin: 0 7%;
+}
+.main{
+  width: 40%;
+  height: 40%;
+}
+.cen{
+  width: 20%;
+  height: 40%;
 }

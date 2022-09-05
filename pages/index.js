@@ -20,7 +20,10 @@ export default function Home() {
           href='https://meyerweb.com/eric/tools/css/reset/'
           rel="stylesheet"/>
         <link 
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"             
+          crossorigin="anonymous"/>
         </Head>
           <h1 className={top.title}>履歴書</h1>
           <div className={name.beside}>
@@ -34,21 +37,25 @@ export default function Home() {
               </div>
           </div>
 
-          <table>
+          <table className='ta_wrapper'>
             <tbody>
-              <tr className='main'>
+              <tr>
+                <td className='main'>
                 <p className={work.juice}>「ラムネ瓶」</p>
                 <img className={work.img_J} src={"/image/juice.png"}/>
+                </td>
+                <td className='cen'></td>
+                <td className='main'></td>
               </tr>
-              <tr className='cen'></tr>
-              <tr className='main'></tr>
             </tbody>
             <tbody>
-              <tr className='main'></tr>
-              <tr className='cen'></tr>
-              <tr className='main'>
+              <tr>
+                <td className='main'></td>
+                <td className='cen'></td>
+                <td className='main'>
                 <p className={work.soba}>「ざるそば」</p>
                 <img className={work.img_S} src={"/image/soba.png"}/>
+                </td>
               </tr>
             </tbody>
           </table>
