@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import image from 'next/image'
 import React from 'react'
-import Link from 'next/link';
 import Top_Name from '../components/Top_Name';
 import Production_Work from '../components/Production_Work';
 import Qualification from '../components/Qualification';
@@ -13,7 +12,7 @@ import production from '../styles/production.module.css'
 import work from '../styles/work.module.css'
 import qualification from '../styles/qualification.module.css'
 
-export default function Home() {
+export default function Index() {
     return (
       <>
         <Head>
@@ -21,9 +20,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Head>
 
-        <Top_Name></Top_Name>
-        <Production_Work></Production_Work>
-        <Qualification></Qualification>
+        <Top_Name/>
+        <Production_Work/>
+        <Qualification/>
       </>
     );  
 }
