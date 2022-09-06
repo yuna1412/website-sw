@@ -9,22 +9,22 @@ export default function Work() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Head>
 
-        <table className='ta_wrapper'>
+        <table className={work.ta_wrapper}>
           <tbody>
             <tr>
-              <td className='main'>
+              <td className={work.main}>
               <p className={work.juice}>「ラムネ瓶」</p>
               <img className={work.juice_img} src={"/image/juice.png"}/>
               </td>
-              <td className='cen'></td>
-              <td className='main'></td>
+              <td className={work.cen}></td>
+              <td className={work.main}></td>
             </tr>
           </tbody>
           <tbody>
             <tr>
-              <td className='main'></td>
-              <td className='cen'></td>
-              <td className='main'>
+              <td className={work.main}></td>
+              <td className={work.cen}></td>
+              <td className={work.main}>
               <p className={work.soba}>「ざるそば」</p>
               <img className={work.soba_img} src={"/image/soba.png"}/>
               </td>
