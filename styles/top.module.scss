@@ -1,11 +1,13 @@
-.title:first-letter {
+.title{
+  &:first-letter {
     margin-left: 5%;
     font-size: 150%;
     color: #eb6100;
   }
+}
 .tap{
-    color:blue;
-    text-decoration: underline;
+  color:blue;
+  text-decoration: underline;
 }
 .beside{
   margin: 0 5%;
