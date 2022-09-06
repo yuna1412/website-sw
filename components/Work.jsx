@@ -14,7 +14,7 @@ export default function Work() {
             <tr>
               <td className='main'>
               <p className={work.juice}>「ラムネ瓶」</p>
-              <img className={work.img_J} src={"/image/juice.png"}/>
+              <img className={work.juice_img} src={"/image/juice.png"}/>
               </td>
               <td className='cen'></td>
               <td className='main'></td>
@@ -26,7 +26,7 @@ export default function Work() {
               <td className='cen'></td>
               <td className='main'>
               <p className={work.soba}>「ざるそば」</p>
-              <img className={work.img_S} src={"/image/soba.png"}/>
+              <img className={work.soba_img} src={"/image/soba.png"}/>
               </td>
             </tr>
           </tbody>

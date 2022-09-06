@@ -1,6 +1,3 @@
-.wrapper{
-  margin: 0 3%;
-}
 .juice {
   font-size: 150%;
   position: relative;
@@ -14,21 +11,24 @@
     position: absolute;
     content: '';
     border-radius: 50%;
-    background: #eee; }
+    background: #eee; 
+  }
   
   &:before {
     bottom: -15px;
     left: 30px;
     width: 30px;
-    height: 30px;}
+    height: 30px;
+  }
   
   &:after {
     bottom: -30px;
     left: 50px;
     width: 15px;
-    height: 15px;}
+    height: 15px;
+  }
 }
-.img_J{
+.juice_img{
   width: 100%;
   text-align: center;
 }
@@ -46,22 +46,25 @@
      position: absolute;
      content: '';
      border-radius: 50%;
-     background: #eee;}
+     background: #eee;
+    }
    
   &:before {
      right: 30px;
      bottom: -15px;
      width: 30px;
-     height: 30px;}
+     height: 30px;
+    }
    
   &:after {
      right: 50px;
      bottom: -30px;
      width: 15px;
-     height: 15px;}
+     height: 15px;
+    }
 }
 
-.img_S{
+.soba_img{
   width: 100%;
   text-align: center;
 }

@@ -10,10 +10,10 @@ export default function Top() {
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            
+
             <h1 className={top.title}>履歴書</h1>
             <div className={top.beside}>
-              <img className={top.img_F} src={"/image/face.png"}/>
+              <img className={top.face_img} src={"/image/face.png"}/>
               <p className={top.myName}>民谷友菜/19歳/女</p>
             </div>
         </>
