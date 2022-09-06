@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import top from '../styles/top.module.css'
-import work from '../styles/work.module.css'
+import work from '../styles/work.module.scss'
 
 export default function Work() {
     return (

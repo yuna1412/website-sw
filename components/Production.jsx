@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import top from '../styles/top.module.css'
-import production from '../styles/production.module.css'
+import production from '../styles/production.module.scss'
 
 export default function Production() {
     return (

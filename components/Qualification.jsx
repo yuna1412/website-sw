@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import top from '../styles/top.module.css'
-import qualification from '../styles/qualification.module.css'
+import qualification from '../styles/qualification.module.scss'
 
 export default function Qualification() {
     return (

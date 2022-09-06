@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import top from '../styles/top.module.css'
+import top from '../styles/top.module.scss'
 
 
 export default function Top() {

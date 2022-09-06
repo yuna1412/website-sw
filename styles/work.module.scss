@@ -8,66 +8,67 @@
   width: 40%;
 }
 .juice {
-    font-size: 150%;
-    position: relative;
-    margin-bottom: 2em;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-    background: #eee;}
+  font-size: 150%;
+  position: relative;
+  margin-bottom: 2em;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background: #eee;
   
-  .juice:before,
-  .juice:after {
+  &:before,
+  &:after {
     position: absolute;
     content: '';
     border-radius: 50%;
     background: #eee; }
   
-  .juice:before {
+  &:before {
     bottom: -15px;
     left: 30px;
     width: 30px;
     height: 30px;}
   
-  .juice:after {
+  &:after {
     bottom: -30px;
     left: 50px;
     width: 15px;
     height: 15px;}
-
+}
   .img_J{
     width: 100%;
     text-align: center;
-  }
-  .group_S{
+}
+.group_S{
     width: 40%;
     margin: 0 0 0 auto;
-  }
-  .soba {
-    font-size: 150%;
-    position: relative;
-     margin-bottom: 2em;
-     padding: 1.5rem 2rem;
-     border-radius: 10px;
-     background: #eee;}
+}
+.soba {
+  font-size: 150%;
+  position: relative;
+  margin-bottom: 2em;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background: #eee;
    
-  .soba:before,
-  .soba:after {
+  &:before,
+  &:after {
      position: absolute;
      content: '';
      border-radius: 50%;
      background: #eee;}
    
-  .soba:before {
+  &:before {
      right: 30px;
      bottom: -15px;
      width: 30px;
      height: 30px;}
    
-  .soba:after {
+  &:after {
      right: 50px;
      bottom: -30px;
      width: 15px;
      height: 15px;}
+}
 
   .img_S{
     width: 100%;
