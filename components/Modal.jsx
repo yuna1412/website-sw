@@ -6,15 +6,23 @@ import modal from '../styles/modal.module.scss'
 
 
 export default function Modal({show, setShow}) {
+  const text = useRef();
   const closeModel = () => {
-    setShow(false)
+    
+    gsap.to(text.current, {
+      opacity: 0,
+      onComplete: ()=>{
+        setShow(false)
+      }
+    });
   }
+
   if(show) {
     return (
-      <div className={modal.overlay} onClick={closeModel}>
-        <div className={modal.content} onClick={(e) => e.stopPropagation()}>
-          <p>モーダルウィンドウ</p>
-          <button onClick={() => setShow(false)}>close</button>
+      <div className={modal.overlay}>
+        <div className={modal.content}>
+          <p ref={text}>モーダルウィンドウ</p>
+          <button onClick={closeModel}>close</button>
         </div>
       </div>
     )
