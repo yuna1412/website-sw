@@ -14,7 +14,6 @@ export default function Example() {
             opacity: 0
             });
         flg=true
-        console.log("flgはfalseです")
     }else{
         gsap.to(countText.current, {
             opacity: 1
