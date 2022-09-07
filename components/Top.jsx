@@ -9,10 +9,6 @@ export default function Top() {
             <Head>
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <link 
-                href='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js'
-                rel='stylesheet'
-            />
             </Head>
 
             <h1 className={top.title}>履歴書</h1>

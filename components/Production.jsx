@@ -2,6 +2,7 @@ import Head from 'next/head'
 import production from '../styles/production.module.scss'
 
 export default function Production() {
+    
     return (
       <>
         <Head>
