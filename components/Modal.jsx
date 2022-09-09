@@ -1,23 +1,23 @@
 import Head from 'next/head'
 import { gsap }  from 'gsap';
 import React, { useState, useEffect, useRef } from 'react';
-import { render } from 'react-dom'
 import modal from '../styles/modal.module.scss'
+import { render } from 'react-dom'
 
 
 export default function Modal({show, setShow}) {
+  not.style.display = "none"
   const text = useRef();
 
   const closeModel = () => {
     gsap.to(text.current, {
       opacity: 0,
       onComplete: ()=>{
-        // setShow(false)
+       setShow(false)
       }
     });
   }
 
-  // if(show) {
     return (
         <div className={modal.overlay}>
           <div className={modal.content}>
@@ -26,7 +26,4 @@ export default function Modal({show, setShow}) {
           </div>
         </div>
     )
-  // } else {
-  //   return null;
-  // }
 }
