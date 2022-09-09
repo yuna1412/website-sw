@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import Top from '../components/Top';
 import Production from '../components/Production';
@@ -19,6 +20,9 @@ export default function Index() {
         <Production/>
         <Work/>
         <Qualification/>
+
+        <Link href="/test"><a>ボタン</a></Link>
+
 
         
       </>

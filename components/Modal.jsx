@@ -7,21 +7,6 @@ import modal from '../styles/modal.module.scss'
 
 export default function Modal({show, setShow}) {
   const text = useRef();
-  // let flg = false
-
-  //  const window = () => {
-  //    if(flg == false){
-  //        gsap.to(modalText.current, {
-  //            opacity: 0
-  //            });
-  //        flg=true
-  //    }else{
-  //        gsap.to(modalText.current, {
-  //            opacity: 1
-  //            });
-  //        flg=false
-  //    }
-  //  }  
 
   const closeModel = () => {
     gsap.to(text.current, {
