@@ -7,6 +7,7 @@ import Production from '../components/Production';
 import Work from '../components/Work';
 import Qualification from '../components/Qualification';
 import { render } from 'react-dom'
+import example from '../styles/example.module.scss'
 
 export default function Index() {
     return (
@@ -21,9 +22,10 @@ export default function Index() {
         <Work/>
         <Qualification/>
 
-        <Link href="/test"><a>ボタン</a></Link>
-
-
+        <div className={example.link}>
+          <Link href="/test"><a>ボタンページ</a></Link><br/>
+          <Link href="/modal"><a>モーダルページ</a></Link>
+        </div>
         
       </>
     );  

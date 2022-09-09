@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import { gsap }  from 'gsap';
 import Modal from '../components/Modal';
 import React, { useState, useRef, useEffect } from 'react';
+import example from '../styles/example.module.scss'
 
 
 export default function modal() {
@@ -26,11 +28,15 @@ export default function modal() {
   });
 
   return(
-    <div>
+    <>
     {/* <button onClick={() => setShow(true)}>Click</button> */}
       <div ref={modal}>
         <Modal/>
       </div>
-    </div>
+      <div className={example.link}>
+        <Link href="/"><a>履歴書ページ</a></Link>
+        <Link href="/test"><a>ボタンページ</a></Link>
+      </div>
+    </>
   );  
 }

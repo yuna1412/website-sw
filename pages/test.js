@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import Example from '../components/Example';
+import example from '../styles/example.module.scss'
 
 export default function test() {
     return (
@@ -11,8 +12,10 @@ export default function test() {
           </Head>
           <Example/>
 
-          <Link href="/"><a>履歴書ページ</a></Link>
-
+          <div className={example.link}>
+            <Link href="/"><a>履歴書ページ</a></Link><br/>
+            <Link href="/modal"><a>モーダルページ</a></Link>
+          </div>
         </>
       );  
 }
