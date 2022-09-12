@@ -9,30 +9,20 @@ import { initScriptLoader } from 'next/script';
 
 
 export default function modal() {
-  const [show, setShow] = useState(false)
-  const modal= useRef();
+  const [show, setShow] = useState(false) //useState定義(初期値:false)
 
-  
+  //openModal setShowをtrueに
   const openModel = () => {
-    gsap.set(modal.current, {
-      opacity: 0,
-    })
-    gsap.to(modal.current, {
-      opacity: 1,
-      duration: 2,
-      onComplete: ()=>{
-       setShow(true)
-      }
-    });
+    setShow(true)
   }
 
   return(
     <>
       <div>
          <button onClick={openModel}>Click</button> 
-          <div style={{display: 'block'}} ref={modal}>
-            <Modal show={show} setShow={setShow}/>
-          </div>
+        <div>
+          <Modal show={show} setShow={setShow}/>
+        </div>
       </div>
       
       <div className={example.all}>
