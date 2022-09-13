@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { gsap }  from 'gsap';
-import Modal from '../components/Modal';
+import Anime from '../components/Anime';
 import React, { useState, useRef, useEffect } from 'react';
 import example from '../styles/example.module.scss'
 import { NodeNextRequest } from 'next/dist/server/base-http/node';
 import { initScriptLoader } from 'next/script';
 
 
-export default function modal() {
+export default function anime() {
   const [show, setShow] = useState(false) //useState定義(初期値:false)
 
   //openModal setShowをtrueに
@@ -21,14 +21,14 @@ export default function modal() {
       <div>
          <button onClick={openModel}>Click</button> 
         <div>
-          <Modal show={show} setShow={setShow}/>
+          <Anime show={show} setShow={setShow}/>
         </div>
       </div>
       
       <div className={example.all}>
+        <Link href="/"><a>モーダルページ</a></Link><br/>
         <Link href="/resume"><a>履歴書ページ</a></Link><br/>
-        <Link href="/test"><a>ボタンページ</a></Link><br/>
-        <Link href="/anime"><a>テキストアニメーションページ</a></Link>
+        <Link href="/test"><a>ボタンページ</a></Link>
       </div>
     </>
   );  

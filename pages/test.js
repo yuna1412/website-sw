@@ -14,7 +14,9 @@ export default function test() {
 
           <div className={example.link}>
             <Link href="/"><a>履歴書ページ</a></Link><br/>
-            <Link href="/modal"><a>モーダルページ</a></Link>
+            <Link href="/modal"><a>モーダルページ</a></Link><br/>
+            <Link href="/anime"><a>テキストアニメーションページ</a></Link>
+
           </div>
         </>
       );  

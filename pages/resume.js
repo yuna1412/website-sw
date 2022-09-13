@@ -1,3 +1,4 @@
+import '../styles/bootstrap.min.scss'
 import Head from 'next/head'
 import image from 'next/image'
 import Link from 'next/link';
@@ -24,7 +25,8 @@ export default function Index() {
 
         <div className={example.link}>
           <Link href="/test"><a>ボタンページ</a></Link><br/>
-          <Link href="/modal"><a>モーダルページ</a></Link>
+          <Link href="/modal"><a>モーダルページ</a></Link><br/>
+          <Link href="/anime"><a>テキストアニメーションページ</a></Link>
         </div>
         
       </>

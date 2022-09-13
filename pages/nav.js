@@ -1,27 +1,41 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { gsap }  from 'gsap';
-import Modal from '../components/Modal';
+import Nav from '../components/Nav';
 import React, { useState, useRef, useEffect } from 'react';
 import example from '../styles/example.module.scss'
+import navSheet from '../styles/nav.module.scss'
 import { NodeNextRequest } from 'next/dist/server/base-http/node';
 import { initScriptLoader } from 'next/script';
 
 
-export default function modal() {
+export default function nav() {
   const [show, setShow] = useState(false) //useState定義(初期値:false)
+  const navRef = useRef()
+  const window =useRef()
 
   //openModal setShowをtrueに
   const openModel = () => {
+    gsap.set(window.current, {
+      opacity:0,
+    })
+    gsap.to(window.current, {
+      opacity:1,
+      duration:0.1,
+      onStart: () => {
+        // navRef.current.start() 
+        console.log(navRef.current)
+      }
+    })
     setShow(true)
   }
 
   return(
     <>
       <div>
-         <button onClick={openModel}>Click</button> 
-        <div>
-          <Modal show={show} setShow={setShow}/>
+         <a href="#" className={navSheet.button} onClick={openModel}>Click</a> 
+         <div  ref={window}>
+          <Nav ref={navRef} show={show} setShow={setShow}/>
         </div>
       </div>
       

@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import { gsap }  from 'gsap';
 import React, { useState, useEffect, useRef } from 'react';
-import modal from '../styles/modal.module.scss'
+import anime from '../styles/anime.module.scss'
 import { render } from 'react-dom'
 
 
-export default function Modal({show, setShow}) {
+
+export default function Anime({show, setShow}) {
   const text = useRef();
   const back = useRef();
   const container = useRef();
+  
 
   //useEffect(この処理は毎回レンダーされると発生する)
   //レンダーの結果が反映された後に動作（実行タイミングをレンダリング後まで遅らせる）
@@ -42,9 +44,9 @@ export default function Modal({show, setShow}) {
 
     return (
       <div ref={container}>
-        <div className={modal.overlay}  onClick={closeModel}>
-          <div className={modal.content} onClick={(event) => event.stopPropagation()}>
-            <p ref={text}>モーダルウィンドウ</p>
+        <div className={anime.overlay}  onClick={closeModel}>
+          <div className={anime.content} onClick={(event) => event.stopPropagation()}>
+            <p className={anime.fadeIn}>モーダルウィンドウ</p>
             <button onClick={closeModel}>close</button>
           </div>
         </div>
