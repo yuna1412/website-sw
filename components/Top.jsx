@@ -1,3 +1,4 @@
+import '../styles/bootstrap.min.scss'
 import Head from 'next/head'
 import React from 'react'
 import top from '../styles/top.module.scss'

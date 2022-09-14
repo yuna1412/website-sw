@@ -10,7 +10,7 @@ import Qualification from '../components/Qualification';
 import { render } from 'react-dom'
 import example from '../styles/example.module.scss'
 
-export default function Index() {
+export default function resume() {
     return (
       <>
         <Head>

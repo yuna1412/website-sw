@@ -1,0 +1,23 @@
+.button{
+  display: block;
+  width: 30%;
+  padding: 3% 10%;
+  margin: auto;
+  background: rgb(0, 165, 47);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+}
+
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fadeIn {
+  flex-direction:column;
+  align-items:flex-start;
+  padding: 40% 5%;
+  color: rgb(0, 0, 0);
+  }
+}
