@@ -1,4 +1,4 @@
-import '../styles/bootstrap.min.scss'
+// import '../styles/bootstrap.min.scss'
 import Head from 'next/head'
 import production from '../styles/production.module.scss'
 

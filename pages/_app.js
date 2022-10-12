@@ -1,3 +1,4 @@
+import '../styles/bootstrap.min.scss'
 import '../styles/reset.scss'
 
 function MyApp({ Component, pageProps }) {

@@ -32,6 +32,10 @@ export default function nav() {
 
   return(
     <>
+        <Head>
+          <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </Head>
       <div>
          <a href="#" className={navSheet.button} onClick={openModel}>Click</a> 
          <div  ref={window}>

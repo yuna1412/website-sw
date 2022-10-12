@@ -1,4 +1,4 @@
-import '../styles/bootstrap.min.scss'
+// import '../styles/bootstrap.min.scss'
 import Head from 'next/head'
 import React from 'react'
 import qualification from '../styles/qualification.module.scss'
